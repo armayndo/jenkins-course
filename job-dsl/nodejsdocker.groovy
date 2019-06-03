@@ -16,7 +16,7 @@ job('NodeJS Docker example') {
         dockerBuildAndPublish {
             repositoryName('armayndo/docker-nodejs-demo')
             tag('${GIT_REVISION,length=9}')
-            registryCredentials('Pass4Docker')
+            registryCredentials('dockerhub2')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
